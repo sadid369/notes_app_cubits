@@ -98,9 +98,6 @@ class _HomePageState extends State<HomePage> {
                             (context, index) => MyGridTile(
                               notes: state.notes![index],
                               index: index,
-                              callbackAction: () {
-                                setState(() {});
-                              },
                             ),
                           ),
                         ),

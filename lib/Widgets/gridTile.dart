@@ -13,12 +13,11 @@ import 'package:notes_app_cubit/pages/note_display_page.dart';
 class MyGridTile extends StatelessWidget {
   final Notes notes;
   final int index;
-  final Function callbackAction;
+
   const MyGridTile({
     Key? key,
     required this.notes,
     required this.index,
-    required this.callbackAction,
   }) : super(key: key);
 
   @override
@@ -119,7 +118,7 @@ class MyGridTile extends StatelessWidget {
                               context
                                   .read<NotesCubit>()
                                   .deleteNote(notes.note_id!);
-                              callbackAction();
+
                               Navigator.pop(context);
                             },
                             child: const Text(
