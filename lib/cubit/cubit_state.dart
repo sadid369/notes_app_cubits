@@ -2,7 +2,7 @@
 import 'package:notes_app_cubit/model/notes.dart';
 
 class NotesState {
-  final List<Notes>? notes;
+  final List<Notes> notes;
   NotesState({
     required this.notes,
   });

@@ -46,7 +46,7 @@ class _HomePageState extends State<HomePage> {
       ),
       body: BlocBuilder<NotesCubit, NotesState>(
         builder: (context, state) {
-          return state.notes != null
+          return state.notes.isNotEmpty
               ? Container(
                   padding: const EdgeInsets.all(15),
                   child: Column(

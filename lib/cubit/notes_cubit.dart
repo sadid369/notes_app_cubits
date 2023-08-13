@@ -4,7 +4,7 @@ import 'package:notes_app_cubit/model/notes.dart';
 import 'package:notes_app_cubit/repository/app_database.dart';
 
 class NotesCubit extends Cubit<NotesState> {
-  NotesCubit() : super(NotesState(notes: null));
+  NotesCubit() : super(NotesState(notes: []));
   List<Notes> arrNotes = [];
   var db = AppDatabase.db;
 
